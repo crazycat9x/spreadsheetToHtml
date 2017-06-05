@@ -8,7 +8,7 @@ def excelToList(target):
         import xlrd
         wb = xlrd.open_workbook(target)
         sh1 = wb.sheet_by_index(0)
-        for rownum in range(sh1.nrows): 
+        for rownum in range(sh1.nrows):
             data += [sh1.row_values(rownum)]
     elif file_ext == "csv":
         import csv
