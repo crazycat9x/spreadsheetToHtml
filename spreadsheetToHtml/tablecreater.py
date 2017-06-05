@@ -3,7 +3,6 @@ import subprocess
 from excelConverse import *
 from styling import *
 
-
 def Main():
 	target = os.path.abspath("target.xlsx")
 	final = os.path.abspath("final.txt")
