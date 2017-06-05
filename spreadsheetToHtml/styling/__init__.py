@@ -1,1 +1,1 @@
-from .styling import styling
+from .styling import style

@@ -1,17 +1,17 @@
-import os
 import subprocess
-from excelConverse import *
-from styling import *
-from tkinter.filedialog import *
+import excelConverse
+import styling
+from tkinter.filedialog import askopenfilename, asksaveasfilename
 
 def Main():
 	target = askopenfilename(title = "Choose spreadsheet file.")
 	style = askopenfilename(filetypes =(("Cascading style sheet file", "*.css"),("All Files","*.*")),title = "Choose CSS file.")
 	final = asksaveasfilename(defaultextension=".txt")
-	tbl = excelToList(target)
-	listToHtml(tbl,final)
-	styling(final, style)
+	tbl = excelConverse.excelToList(target)
+	excelConverse.listToHtml(tbl,final)
+	styling.style(final, style)
 	toClipBoard = open(final,"r").read()
-	subprocess.run(['clip.exe'], input=toClipBoard.encode('utf-8'), check=True)	
+	subprocess.run(['clip.exe'], input=toClipBoard.encode('utf-8'), check=True)
+
 Main()
 
