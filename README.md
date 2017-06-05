@@ -1,6 +1,4 @@
 # spreadsheetToHtml
 ## this program created a styled html table from any type of spreadsheet file
 
-1. put spread sheet at the root directory and rename it to target
-2. the style.css file located in styiling folder can be use to alter the table style
-3. run createTable.py and the code is automaticly added to the clipboard, alternatively it can be found in the final.txt file
+Just run tableCreater.py. The html table is automatically copied to clipboard for your convenient ;)
