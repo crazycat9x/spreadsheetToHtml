@@ -32,5 +32,4 @@ def listToHtml(tbl,final):
     html = html.encode('ascii','replace').decode('ascii')
     display = open(final, "w")
     display.write(html)
-    print("<table>{0}</table>".format(rows))
     display.close()
