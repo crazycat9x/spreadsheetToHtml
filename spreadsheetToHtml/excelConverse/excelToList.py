@@ -1,5 +1,5 @@
 import os
-import odfToArray
+from .odfToArray import *
 
 def excelToList(target):
     file_ext = target[target.index(".")+1:]

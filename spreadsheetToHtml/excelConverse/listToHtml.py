@@ -9,6 +9,7 @@ def listToHtml(tbl,final):
                 if (tbl[t][i] * 10) % 10 == 0:
                     tbl[t][i] = int(tbl[t][i])
             tbl[t][i] = str(tbl[t][i])
+        
          
     for t in tbl:
         if count == 0:
@@ -26,7 +27,7 @@ def listToHtml(tbl,final):
             cols[i] += "</tr><tr>"
             
     rows = "<thead><tr>{0}</tr></tbody>".format("".join(cols))
-    rows.encode('utf-8','ignore')
     display = open(final, "w", encoding="utf-8")
     display.write("<table>{0}</table>".format(rows))
+    print("<table>{0}</table>".format(rows))
     display.close()

@@ -1,0 +1,4 @@
+This application require the following packages in order to work:
+openpyxl
+odfpy
+xlrd
