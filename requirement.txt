@@ -1,4 +1,3 @@
-This application require the following packages in order to work:
-openpyxl
-odfpy
-xlrd
+openpyxl==2.4.8
+odfpy==1.3.4
+xlrd==1.0.0
