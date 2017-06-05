@@ -1,10 +1,10 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='spreadsheetToHtml',
     version='1.0.0',
-    install_requires=['openpyxl','odfpy','xlrd']
     packages=['spreadsheetToHtml.styling', 'spreadsheetToHtml.excelConverse'],
+    install_requires=['openpyxl','odfpy','xlrd'],
     url='',
     license='apache license 2.0',
     author='Tien Nguyen Khac',
