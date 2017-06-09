@@ -27,7 +27,6 @@ def listToHtml(tbl, final):
 
     rows = "<thead><tr>{0}</tr></tbody>".format("".join(cols))
     html = "<table>{0}</table>".format(rows)
-    print(html)
     display = open(final, "w", encoding='utf-8')
     display.write(html)
     display.close()

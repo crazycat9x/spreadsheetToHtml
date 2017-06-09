@@ -14,8 +14,8 @@ def Main():
     tbl = excelConverse.excelToList(target)
     excelConverse.listToHtml(tbl, final)
     styling.style(final, style)
-    toClipBoard = open(final, "r").read()
-    subprocess.run(['clip.exe'], input=toClipBoard.encode('utf-8'), check=True)
+    toClipBoard = open(final, "r", encoding = "utf-8").read()
+    subprocess.run(['clip.exe'], input=toClipBoard.encode("utf-8"), check=True)
 
 
 Main()
